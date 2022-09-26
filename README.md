@@ -1,5 +1,5 @@
 ### Rebel Base Movies - Star Wars Episode Browser
-##### A Star Wars Movie Episode Guide 
+##### A Star Wars Movie Episode Guide (Ep 1-6)
 ##### ExpressJS Single Page Application (SPA) <br> deployed on [Render](https://render.com/) Cloud Hosting Services
 ___
 #### [Live Heroku App](https://rebel-base-movies.herokuapp.com/)
