@@ -25,6 +25,12 @@ ___
 #### **Getting Started:** 
 ___
 #### Deployment to Render:
+##### Note: Previous deployment to Heroku is reflected in the original code base. This has been changed due to the lack of free-hosting tiers provided. <br> Current deployment has been moved to Render Cloud Services. A brief explanation of how to do this is provided below. 
+
+* Assure that your project has successfully been committed to Github. Any future changes made and pushed up will be directly reflected on [Render](https://render.com/). 
+* From the Dashboard click on **New** to connect your Github repo and create your hosted application from the given options (either Static Site or Web Service). 
+* Name your projet then scroll down and make sure that the `yarn build` and `yarn start` point to the correct files. *See the Scripts section of `package.json` file for clarification.*
+* If you have any global or secret keys you can create them by expanding the **Advanced** tab and manually entering the proper values in the form boxes provided.
 ___
 #### **Reporting Bugs or Issues:**
  If you would like to report a **Bug** or **Issue** in this repo feel free to do so under the **Issues** tab or contact me directly about any major concerns. Ideas for improvements or enhancements to this project are also encouraged. Please address these matters by sending a **Pull Request** as they will be reviewed for potential consideration. 
