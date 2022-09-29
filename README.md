@@ -23,6 +23,10 @@ ___
 [Render](https://render.com/docs)
 ___
 #### **Getting Started:** 
+##### Before proceeding with the following steps it is assumed that both [Node.js](https://nodejs.org/en/download/) and [Git](https://git-scm.com/downloads) have been downloaded locally on your system. <br> If not, they can be obtained by clicking on the links provided. Further assistance can be found in the documentation if necessary. 
+1. **Clone** this repository `$ git clone https://github.com/inglorious-ratbastard/star_wars_movie_app.git`
+2. In the terminal/command prompt run the `npm install` or `yarn install` command to install the projects dependencies
+3. Run the `node app.js` command in the terminal to start the server and run the application
 ___
 #### Deployment to Render:
 ##### Note: Previous deployment to Heroku is reflected in the original code base. This has been changed due to the lack of free-hosting tiers provided. <br> Current deployment has been moved to Render Cloud Services. A brief explanation of how to do this is provided below. 
