@@ -2,7 +2,7 @@
 ##### A Star Wars Movie Episode Guide (Ep 1-6)
 ##### ExpressJS Single Page Application (SPA) <br> deployed on [Render](https://render.com/) Cloud Hosting Services
 ___
-#### [Live Heroku App](https://rebel-base-movies.herokuapp.com/)
+#### [Live Application](https://rebel-base-movies.onrender.com/)
 ##### Single Page Web Application 
 ![Node](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
 ![Express](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)
