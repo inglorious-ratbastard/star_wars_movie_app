@@ -2,12 +2,12 @@
 <html lang="en">
   <head>
     
-    <% include partials/head.ejs %>
+    <%- include ('partials/head.ejs'); -%>
     
   </head>
   <body>
   
-    <% include partials/header.ejs %>
+    <%- include ('partials/header.ejs'); -%>
    
     <div id="hero-image-single" style="background-image: url('/images/<%= movie.hero_image %>')">
         <h1 id="hero-title"><%= title %></h1>
@@ -39,7 +39,8 @@
         
     </div>
 
-    <% include partials/footer.ejs %>
-    <% include partials/scripts.ejs %>
+      <%- include ('partials/footer.ejs'); -%>
+      <%- include ('partials/scripts.ejs'); -%>
+        
   </body>
 </html>     
