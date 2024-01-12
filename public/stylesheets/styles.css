@@ -3,7 +3,7 @@ General Styles
 ----------------------------- */
 body {
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 400;
+	font-weight: 600;
 	color: #333;
 }
 
@@ -12,20 +12,18 @@ body {
 	padding-right: 11%;
 }
 
-
-
 /* --------------------------
 Hero Image / Title Styles 
 ----------------------------- */
 #hero-image {
-	height: 550px;
+	height: 650px;
 	width: 100%;
 	background-color: #444;
 	background-image: url('../images/death_star_image.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	position: relative;
+	position: relative; 
 }
 
 #hero-image::before {
@@ -34,13 +32,13 @@ Hero Image / Title Styles
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background: rgba(0,0,0,0.15);
-	content: "";
+	background: rgba(0,0,0,0.15); 
+	content: ""; 
 }
 
 #hero-image #hero-title {
 	position: absolute;
-	background-color: #fff;
+	/* background-color: #fff; */ 
 	padding: 25px 60px;
 	left: 50%;
 	-webkit-transform: translateX(-50%);
@@ -48,18 +46,15 @@ Hero Image / Title Styles
 	-o-transform: translateX(-50%);
 	-ms-transform: translateX(-50%);
   transform: translateX(-50%);
-
+  opacity: 0.6; 
+  color: white; 
   bottom: 0;
   margin: 0px;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 600; 
   font-size: 1.20em;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.4px; 
 }
-
-
-
-
 
 /* ---------------------------------------
 Navbar and Navigation Styles / Overrides 
@@ -74,6 +69,7 @@ Navbar and Navigation Styles / Overrides
 	text-transform: uppercase;
 	letter-spacing: 0.3px;
 	font-size: 12px;
+  padding-right: 30px;
 }
 
 .dropdown.open .dropdown-menu li a {
@@ -85,7 +81,7 @@ Navbar and Navigation Styles / Overrides
 }
 
 .navbar-nav > li:first-child {
-	margin-right: 25px;
+	margin-right: 10px;
 }
 
 .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
@@ -101,14 +97,14 @@ Navbar and Navigation Styles / Overrides
 	background-color: rgba(0,0,0,0.5);
 }
 
-
-
-
+#logo {
+  color: #fff;
+  font-size: 15px;
+}
 
 /* -----------------------------
 Home Page Posters Styles 
 -------------------------------- */
-
 #posters-wrapper {
 	padding-top: 75px;
 }
@@ -118,7 +114,6 @@ Home Page Posters Styles
 	display: inline-block;
 	position: relative;
 }
-
 
 /* Poster Overlay Styles */
 .poster-info-overlay {
@@ -151,14 +146,9 @@ Home Page Posters Styles
 	opacity: 1;
 }
 
-
-
-
-
 /* -----------------------------
 Footer Styles 
 -------------------------------- */
-
 footer {
 	margin-top: 50px;
 }
@@ -168,17 +158,18 @@ footer::before {
 	display: block;
 	width: 90%;
 	margin-bottom: 20px;
-	border-top: 1px solid #dedede;
+	border-top: 1px solid #dedede; 
 	margin-left: auto;
-	margin-right: auto;
+	margin-right: auto; 
 }
 
 footer p {
 	float: left;
-	color: #999;
+	/* color: #999; */
+  color: black; 
 	letter-spacing: 0.3px;
 	font-size: 12px;
-	padding-bottom: 20px;
+	padding-bottom: 20px;  
 }
 
 footer .social-media-icons {
@@ -188,7 +179,7 @@ footer .social-media-icons {
 footer .social-media-icons i {
 	font-size: 24px;
 	color: #999;
-	transition: 0.5s ease-in-out;
+	transition: 0.5s ease-in-out; 
 }
 
 footer .social-media-icons a:first-child {
@@ -203,26 +194,16 @@ footer .social-media-icons a:first-child:hover i {
 	color: #333;
 }
 
-
-
-
-
-
 /* -----------------------------
 Movie-Single Styles 
 -------------------------------- */
-
-
-
-
-
 
 /* ---------------------------------------
 Movie-Single Hero Image and Title Styles 
 ------------------------------------------ */
 
 #hero-image-single {
-	height: 550px;
+	height: 650px;
 	width: 100%;
 	background-color: #444;
 	background-size: cover;
@@ -243,11 +224,12 @@ Movie-Single Hero Image and Title Styles
 
 #hero-image-single #hero-title {
 	position: absolute;
-	background-color: #fff;
+	/* background-color: #fff; */
 	padding: 25px 60px;
 	left: 50%;
 	width: auto;
-
+  opacity: 0.6; 
+  color: white; 
 	-webkit-transform: translateX(-50%);
 	-moz-transform: translateX(-50%);
 	-o-transform: translateX(-50%);
@@ -259,14 +241,10 @@ Movie-Single Hero Image and Title Styles
   margin: 0px;
 
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 1.20em;
   letter-spacing: 0.4px;
 }
-
-
-
-
 
 /* ---------------------------------------
 Movie-Single Poster and Description Styles 
@@ -316,14 +294,9 @@ Movie-Single Poster and Description Styles
 	padding-left: 0px;
 }
 
-
-
-
-
 /* -----------------------------
 Media Queries / Responsive Styles
 -------------------------------- */
-
 /* Decrease content padding */
 @media (max-width: 1024px) {
 	.content-padding {
@@ -348,7 +321,6 @@ Media Queries / Responsive Styles
 		margin-bottom: 30px;
 	}
 }
-
 
 /* Two posters per row on smaller devices */
 @media (max-width: 991px) {
@@ -391,7 +363,6 @@ Media Queries / Responsive Styles
 		width: 75%;
 	}	
 }
-
 
 /* Increase width of the hero-title element on home page to prevent text from stacking */
 @media (max-width: 767px) {
@@ -451,14 +422,9 @@ Media Queries / Responsive Styles
 	}
 }
 
-
-
-
-
 /* -----------------------------
 Page Not Found Template Styles
 -------------------------------- */
-
 #hero-image-notFound {
 	height: 550px;
 	width: 100%;
