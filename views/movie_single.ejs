@@ -6,15 +6,15 @@
     
   </head>
   <body>
-  
+
     <%- include ('partials/header.ejs'); -%>
    
     <div id="hero-image-single" style="background-image: url('/images/<%= movie.hero_image %>')">
         <h1 id="hero-title"><%= title %></h1>
     </div>
         
-    <div class="content-padding clearfix">
-        
+    <div class="content-padding clearfix" style="background-color: #EDEADE; height: 90vh; padding-top: 20px;">
+    
         <div class="poster-wrapper">
             <img src="/images/<%= movie.poster %>" class="img-responsive">
         </div>

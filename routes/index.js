@@ -1,7 +1,5 @@
 var moviesJSON = require('../movies.json');
 
-
-//home
 exports.home = function (req, res) {
     
    var movies = moviesJSON.movies; 
@@ -12,7 +10,6 @@ exports.home = function (req, res) {
     });
 };
 
-//movie single
 exports.movie_single = function (req, res) {
    
    var episode_number = req.params.episode_number; 
@@ -43,7 +40,6 @@ exports.movie_single = function (req, res) {
    
 };
 
-//notFound
 exports.notFound = function (req, res) {
     var movies = moviesJSON.movies; 
     

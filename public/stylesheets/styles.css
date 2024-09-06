@@ -1,22 +1,17 @@
-/* --------------------------
-General Styles 
------------------------------ */
 body {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 600;
-	color: #333;
+	color: #333; 
+	background-color: #F9F6EE;
 }
 
 .content-padding {
 	padding-left: 11%;
-	padding-right: 11%;
+	padding-right: 11%; 
 }
 
-/* --------------------------
-Hero Image / Title Styles 
------------------------------ */
 #hero-image {
-	height: 650px;
+	height: 680px;
 	width: 100%;
 	background-color: #444;
 	background-image: url('../images/death_star_image.jpg');
@@ -38,7 +33,6 @@ Hero Image / Title Styles
 
 #hero-image #hero-title {
 	position: absolute;
-	/* background-color: #fff; */ 
 	padding: 25px 60px;
 	left: 50%;
 	-webkit-transform: translateX(-50%);
@@ -56,9 +50,6 @@ Hero Image / Title Styles
   letter-spacing: 0.4px; 
 }
 
-/* ---------------------------------------
-Navbar and Navigation Styles / Overrides 
------------------------------------------- */
 .navbar-fixed-top {
 	position: absolute;
 	padding-top: 10px;
@@ -102,23 +93,23 @@ Navbar and Navigation Styles / Overrides
   font-size: 15px;
 }
 
-/* -----------------------------
-Home Page Posters Styles 
--------------------------------- */
 #posters-wrapper {
-	padding-top: 75px;
+	padding-top: 35px;
+	padding-bottom: 35px;
+	background-color: #28282B;
+	filter: brightness(0.9);
 }
 .poster {
 	width: 30%;
 	margin-right: 4%;
 	display: inline-block;
 	position: relative;
+	filter: brightness(0.9);
 }
 
-/* Poster Overlay Styles */
 .poster-info-overlay {
 	position: absolute;
-	background: rgba(0,0,0,0.7);	
+  background: rgba(0,0,0,0.7);
 	bottom: 0;
 	left: 0;
 	opacity: 0;
@@ -130,7 +121,7 @@ Home Page Posters Styles
 	font-weight: 400;
   font-size: 13px;
   letter-spacing: 0.3px;
-  color: #fff;
+  color: #fff; 
   margin: 0px;
 }
 .poster-info-overlay h4 {
@@ -138,7 +129,7 @@ Home Page Posters Styles
 	font-weight: 400;
   font-size: 11px;
   letter-spacing: 0.3px;
-  color: #fff;
+  color: #fff; 
   margin: 0px;	
   margin-top: 15px;
 }
@@ -146,11 +137,8 @@ Home Page Posters Styles
 	opacity: 1;
 }
 
-/* -----------------------------
-Footer Styles 
--------------------------------- */
 footer {
-	margin-top: 50px;
+	margin-top: 0px;
 }
 
 footer::before {
@@ -165,7 +153,6 @@ footer::before {
 
 footer p {
 	float: left;
-	/* color: #999; */
   color: black; 
 	letter-spacing: 0.3px;
 	font-size: 12px;
@@ -194,16 +181,8 @@ footer .social-media-icons a:first-child:hover i {
 	color: #333;
 }
 
-/* -----------------------------
-Movie-Single Styles 
--------------------------------- */
-
-/* ---------------------------------------
-Movie-Single Hero Image and Title Styles 
------------------------------------------- */
-
 #hero-image-single {
-	height: 650px;
+	height: 680px;
 	width: 100%;
 	background-color: #444;
 	background-size: cover;
@@ -224,7 +203,6 @@ Movie-Single Hero Image and Title Styles
 
 #hero-image-single #hero-title {
 	position: absolute;
-	/* background-color: #fff; */
 	padding: 25px 60px;
 	left: 50%;
 	width: auto;
@@ -235,20 +213,14 @@ Movie-Single Hero Image and Title Styles
 	-o-transform: translateX(-50%);
 	-ms-transform: translateX(-50%);
   transform: translateX(-50%);
-
   bottom: 0;
-
   margin: 0px;
-
   text-transform: uppercase;
   font-weight: 600;
   font-size: 1.20em;
   letter-spacing: 0.4px;
 }
 
-/* ---------------------------------------
-Movie-Single Poster and Description Styles 
------------------------------------------- */
 .poster-wrapper {
 	float: left;
 	width: 30%;
@@ -294,10 +266,6 @@ Movie-Single Poster and Description Styles
 	padding-left: 0px;
 }
 
-/* -----------------------------
-Media Queries / Responsive Styles
--------------------------------- */
-/* Decrease content padding */
 @media (max-width: 1024px) {
 	.content-padding {
 		padding-left: 8%;
@@ -311,7 +279,6 @@ Media Queries / Responsive Styles
 	}
 }
 
-/* Apply margins to the correct posters on large devices */
 @media (min-width: 992px) {
 	.poster:nth-child(3), .poster:last-child {
 		margin-right: 0px;
@@ -322,7 +289,6 @@ Media Queries / Responsive Styles
 	}
 }
 
-/* Two posters per row on smaller devices */
 @media (max-width: 991px) {
 	.poster-wrapper {
 		width: 100%;
@@ -348,7 +314,6 @@ Media Queries / Responsive Styles
 
 }
 
-/* Increase width of the hero-title element on Movie-single pages to prevent text from stacking */
 @media (max-width: 1099px) {
 	#hero-image-single #hero-title {
 		font-size: 1.05em;
@@ -364,7 +329,6 @@ Media Queries / Responsive Styles
 	}	
 }
 
-/* Increase width of the hero-title element on home page to prevent text from stacking */
 @media (max-width: 767px) {
 	#hero-image #hero-title {
 		font-size: 1.05em;
@@ -380,7 +344,6 @@ Media Queries / Responsive Styles
 	}	
 }
 
-/* Move navigation to the left and prevent default styles on mobile devices */
 @media (max-width: 767px) {
 	.navbar-right {
 		float: left;
@@ -396,7 +359,6 @@ Media Queries / Responsive Styles
 	
 }
 
-/* Decrease font size and padding of poster overlay on mobile devices */
 @media (max-width: 767px) {
 	.poster-info-overlay h3 {
 		font-size: 12px;
@@ -406,14 +368,12 @@ Media Queries / Responsive Styles
 	}
 }
 
-/* Decrease the height of the hero images on mobile devices */
 @media (max-width: 767px) {
 	#hero-image, #hero-image-single, #hero-image-notFound {
 		height: 400px;
 	}
 }
 
-/* Increase the width of the hero title on very small devices */
 @media(max-width: 400px) {
 	#hero-image-single #hero-title, #hero-image-notFound #hero-title,
 	#hero-image #hero-title {
@@ -422,9 +382,6 @@ Media Queries / Responsive Styles
 	}
 }
 
-/* -----------------------------
-Page Not Found Template Styles
--------------------------------- */
 #hero-image-notFound {
 	height: 550px;
 	width: 100%;
