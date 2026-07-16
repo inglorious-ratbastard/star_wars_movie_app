@@ -1,5 +1,5 @@
 body {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat', sans-serif; 
 	font-weight: 600;
 	color: #333; 
 	background-color: #F9F6EE;
@@ -52,6 +52,9 @@ body {
 
 .navbar-fixed-top {
 	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
 	padding-top: 10px;
 }
 
@@ -59,7 +62,7 @@ body {
 	color: #fff;
 	text-transform: uppercase;
 	letter-spacing: 0.3px;
-	font-size: 12px;
+	font-size: 10px;
   padding-right: 30px;
 }
 
@@ -227,7 +230,7 @@ footer .social-media-icons a:first-child:hover i {
 	margin-top: 50px;
 }
 
-.description-wrapper {
+.description-wrapper { 
 	float: right;
 	margin-left: 5%;
 	width: 65%;
@@ -236,11 +239,11 @@ footer .social-media-icons a:first-child:hover i {
 
 .movie-header {
 	text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 0.95em;
   letter-spacing: 0.4px;
-  padding: 15px 25px;
-  border: 2px solid #333;
+  padding: 13px 15px;
+  border: 1.5px solid #333;
   display: inline-block;
   margin-top: 0px;
   margin-bottom: 15px;
@@ -344,19 +347,16 @@ footer .social-media-icons a:first-child:hover i {
 	}	
 }
 
-@media (max-width: 767px) {
-	.navbar-right {
-		float: left;
-	}
-	.navbar-right li {
-		display: inline-block;
+@media (max-width: 767px) { 
+	.navbar-right{
+		float:none; 
+		display: inline;
+		justify-content:center;
+		padding-left:0;
 	}
 	.navbar-nav .open .dropdown-menu {
-		position: absolute;
-		margin-left: -100px;
-		background-color: rgba(0,0,0,0.5);
-	}
-	
+			position: static;
+	}	
 }
 
 @media (max-width: 767px) {

@@ -10,7 +10,7 @@
     <%- include ('partials/header.ejs'); -%>
    
     <div id="hero-image-single" style="background-image: url('/images/<%= movie.hero_image %>')">
-        <h1 id="hero-title"><%= title %></h1>
+        <h1 id="hero-title" style="font-size: 12px;"><%= title %></h1>
     </div>
         
     <div class="content-padding clearfix" style="background-color: #EDEADE; height: 90vh; padding-top: 20px;">
@@ -22,15 +22,15 @@
         <div class="description-wrapper">
             
                <div class="descrpition">
-                <h2 class="movie-header">Description</h2>
-                <p><%= movie.description %></p>
+                <h2 class="movie-header" style="font-size: 12px;">Description</h2>
+                <p style="font-size: 12px;"><%= movie.description %></p>
             </div>
             
                <div class="main-characters">
-                <h2 class="movie-header">Main Characters</h2>
+                <h2 class="movie-header" style="font-size: 12px;">Main Characters</h2>
                 <ul>
                     <% for (var i = 0; i < main_characters.length; i++) { %>
-                      <li><%= main_characters[i] %></li>
+                      <li style="font-size: 12px;"><%= main_characters[i] %></li>
                     <% } %>
                 </ul>
             </div>
