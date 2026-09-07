@@ -1,8 +1,8 @@
-### Rebel Base Movies - Star Wars Episode Browser
+#### Rebel Base Movies - Star Wars Episode Browser
 ##### A Star Wars Movie Episode Guide (Ep 1-6)
-##### ExpressJS Single Page Application (SPA) <br> deployed on [Render](https://render.com/) Cloud Hosting Services
+##### ExpressJS Single Page Application (SPA) <br> deployed on [Railway](https://railway.com) Cloud Hosting Services
 ___
-#### [Live Application](https://rebel-base-movies.onrender.com/)
+#### [Live Application](https://rebel-base-movies.up.railway.app/)
 ##### Single Page Web Application 
 ![Node](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
 ![Express](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)
@@ -20,7 +20,6 @@ ___
 [ExpressJS](https://expressjs.com/en/4x/api.html)<br>
 [Bootstrap](https://getbootstrap.com/docs/5.2/getting-started/introduction/)<br>
 [jQuery](https://api.jquery.com/)<br>
-[Render](https://render.com/docs)
 ___
 #### **Getting Started:** 
 ##### Before proceeding with the following steps it is assumed that both [Node.js](https://nodejs.org/en/download/) and [Git](https://git-scm.com/downloads) have been downloaded locally on your system. <br> If not, they can be obtained by clicking on the links provided. Further assistance can be found in the documentation if necessary. 
@@ -29,7 +28,7 @@ ___
 3. Run the `node app.js` command in the terminal to start the server and run the application
 ___
 #### Deployment to Render:
-##### Note: Previous deployment to Heroku is reflected in the original code base. This has been changed due to the lack of free-hosting tiers provided. <br> Current deployment has been moved to Render Cloud Services. A brief explanation of how to do this is provided below. 
+##### About: The following explains how this app was deployed to [Render](https://render.com/) Cloud Hosting, assuming that you have already set up an account. Another preferred option for hosting services would be [Railway](https://railway.app/). A brief explanation of how to do this is provided below. 
 
 * Assure that your project has successfully been committed to Github. Any future changes made and pushed up will be directly reflected on [Render](https://render.com/). 
 * From the Dashboard click on **New** to connect your Github repo and create your hosted application from the given options (either Static Site or Web Service). 
